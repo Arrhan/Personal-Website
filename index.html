@@ -38,7 +38,7 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img class='me' src="./assets/me-photoaidcom-cropped.png" alt="Picture of me">
+            <img class='me' src="./assets/me.png" alt="Picture of me">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -72,13 +72,145 @@
             Just wrapped up my second year of university and 2 summer internships - learnt about the real estate industry and the role of tech while working at Realty Income
             and worked on ML models for predicting Syrian Refugee Distribution in Lebanon as an intern at the National Center of Supercomputing Applications.
             Currently working on a Credit Card Reccomendation web app and planning to start a blog where I document my learnings and thoughts as I head into my third year.
-            Excited and always learning and growing! 
+            Excited and always trying to learn and grow! 
         </div>
     </section>
 
-    <section id="Experience">
-        
-    </section>    
+    <section id="experience">
+        <p class="section__text__p1">Take a Glimpse at My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-container">
+            <div class="experience-card">
+                <img src="./assets/ncsa.png" alt="NCSA Logo" class="company-logo">
+                <h3 class="experience-title">Software Engineering Intern</h3>
+                <p class="experience-text">National Center of Supercomputing Applications</p>
+                <p class="date">May 2024 - Present</p>
+                <div class="tech-stack">
+                    <img src="./assets/python.png" alt="Python Logo" class="tech-logo">
+                    <img src="./assets/tensorflow.png" alt="Tensorflow Logo" class="tech-logo">
+                    <img src="./assets/statsmodels.png" alt="Statsmodels Logo" class="tech-logo">
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="./assets/realtyincome.png" alt="Realty Income Logo" class="realty">
+                <h3 class="experience-title">Machine Learning Intern</h3>
+                <p class="experience-text">Realty Income</p>
+                <p class="date">June - August 2024</p>
+                <div class="tech-stack">
+                    <img src="./assets/python.png" alt="Python Logo" class="tech-logo">
+                    <img src="./assets/spark.png" alt="Spark Logo" class="tech-logo">
+                    <img src="./assets/scikit.png" alt="Scikit Learn Logo" class="tech-logo">
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="./assets/amd.png" alt="AMD Logo" class="company-logo">
+                <h3 class="experience-title">Software Engineer</h3>
+                <p class="experience-text">AMD</p>
+                <p class="date">January - May 2024</p>
+                <div class="tech-stack">
+                    <img src="./assets/python.png" alt="Python Logo" class="tech-logo">
+                    <img src="./assets/pytorch.png" alt="Pytorch Logo" class="tech-logo">
+                    <img src="./assets/linux.png" alt="Linux Logo" class="tech-logo">
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="./assets/urap.png" alt="URAP Logo" class="urap">
+                <h3 class="experience-title">Student Programmer</h3>
+                <p class="experience-text">Undergraduate Research Apprenticeship Program</p>
+                <p class="date">January - May 2024</p>
+                <div class="tech-stack">
+                    <img src="./assets/react.png" alt="React Logo" class="tech-logo">
+                    <img src="./assets/sql.png" alt="SQL Logo" class="tech-logo">
+                    <img src="./assets/node.png" alt="Node Logo" class="tech-logo">
+                    <img src="./assets/python.png" alt="Python Logo" class="tech-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Take A Look At My</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="./assets/inprogress.png" alt="Credit Card Application" class="project-image progress">
+                <h3 class="project-title">Credit Card Reccomendation Tool</h3>
+                <p class="project-description">Developing a credit card reccomendation web app which offers
+                    personalized credit card suggestions based on user surveys and their financial data</p>
+                <div class="tech-stack">
+                    <img src="./assets/react.png" alt="React Logo" class="tech-logo">
+                    <img src="./assets/node.png" alt="Node Logo" class="tech-logo">
+                    <img src="./assets/mongodb.png" alt="MongoDB Logo" class="tech-logo">
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/newsdigest.png" alt="News Digest" class="project-image">
+                <h3 class="project-title">Daily News Digest</h3>
+                <p class="project-description"> Built a personalized news digest which compiles fresh news articles every day
+                    from various sources across the web based on my interests.</p>
+                <div class="tech-stack">
+                    <img src="./assets/react.png" alt="React Logo" class="tech-logo">
+                    <img src="./assets/flask.png" alt="Flask Logo" class="tech-logo">
+                    <img src="./assets/python.png" alt="Python Logo" class="tech-logo">
+                </div>
+                <button class='btn btn-color-1 git' onclick="window.open('https://github.com/Arrhan/My-Daily-News', '_blank');">Github</button>
+            </div>
+            <div class="project-card">
+                <img src="./assets/loan.png" alt="Loan Payment Results" class="project-image loaner">
+                <h3 class="project-title">Loan Payment Classifier</h3>
+                <p class="project-description">Developed a feed-forward neural network classifier that was able to correctly classify 89% of loan repayments.</p>
+                <div class="tech-stack">
+                    <img src="./assets/python.png" alt="Python Logo" class="tech-logo">
+                    <img src="./assets/tensorflow.png" alt="Tensorlfow Logo" class="tech-logo">
+                </div>
+                <button class='btn btn-color-1 git' onclick="window.open('https://github.com/Arrhan/Loan-Payment-Classifier', '_blank');">Github</button>
+            </div>
+            <div class="project-card">
+                <img src="./assets/sms.png" alt="SMS Training" class="project-image loaner">
+                <h3 class="project-title">SMS Spam Detection</h3>
+                <p class="project-description">Built a span message classifier using NLP techniques.</p>
+                <div class="tech-stack">
+                    <img src="./assets/python.png" alt="Python Logo" class="tech-logo">
+                    <img src="./assets/nltk.png" alt="NLTK Logo" class="tech-logo">
+                </div>
+                <button class='btn btn-color-1 git' onclick="window.open('https://github.com/Arrhan/SMS-Spam-Detection', '_blank');">Github</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:arrhan.bhatia@gmail.com">arrhan.bhatia@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/arrhan">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Arrhan Bhatia. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -66,9 +66,11 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
+
 #hamburger-nav {
-  display:None;
+  display: none;
 }
+
 .hamburger-menu {
   position: relative;
   display: inline-block;
@@ -78,26 +80,26 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
   height: 24px;
+  width: 30px;
   cursor: pointer;
 }
 
-.hamburger-icon span{
-  width:100%;
-  height:2px;
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
   background-color: black;
   transition: all 0.3 ease-in-out;
 }
 
 .menu-links {
-  top:100%;
-  right:0;
   position: absolute;
-  width: fit-content;
-  max-height:0;
+  top: 100%;
+  right: 0;
   background-color: white;
-  overflow:hidden;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
 
@@ -151,12 +153,7 @@ a:hover {
   gap: 5rem;
   height: 90vh;
 }
-.me {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.1);
-}
+
 .section__pic-container {
   display: flex;
   height: 400px;
@@ -236,11 +233,197 @@ a:hover {
 }
 
 .about_text {
-  /* display: flex;
-  justify-content: center; */
   text-align: center;
   padding-top:5vh;
   padding-left: 15vw;
-  padding-bottom: 5vw;
+  padding-bottom: 5vh;
   padding-right: 15vw;
+  margin-bottom: 10vh;
+}
+
+/* Experience */
+#experience {
+  position: relative;
+}
+
+.experience-container {
+  padding-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom:100px;
+}
+
+/* Experience Card Styling */
+.experience-card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Logo Styling */
+.company-logo {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.urap {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.realty {
+  width: 200px;
+  height: 130px;
+  margin-bottom:-15px;
+}
+
+/* Experience Text Styling */
+.experience-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.experience-text {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* Tech Stack Styling */
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.tech-logo {
+  width: 60px;
+  height: 40px;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+/* Grid Container for Projects */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 60px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Project Image Styling */
+.project-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Project Title and Description */
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.git {
+  margin-top:25px;
+}
+
+.loaner {
+  height: 250px;
+}
+
+.progress {
+  height:200px;
+}
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
