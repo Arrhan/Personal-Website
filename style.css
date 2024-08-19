@@ -246,6 +246,15 @@ a:hover {
   position: relative;
 }
 
+.subtext {
+  font-size: 14px;
+  color: #777;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
 .experience-container {
   padding-top: 5vh;
   display: flex;
