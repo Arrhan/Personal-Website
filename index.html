@@ -1,22 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Built by Arrhan</title>
-</head>
-<body>
-    <nav id="desktop_nav">
-        <div id="name">Arrhan Bhatia</div>
-        <div id="nav">
-            <ul id=>
-                <li><a href=#about>About</li>
-                <li><a href=#Experience>Experience</li>
-                <li><a href=#Projects>Projects</li>
-            </ul>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="name">Arrhan Bhatia</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="name">Arrhan Bhatia</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
     </nav>
-    <script src="'script.js"></script>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class='me' src="./assets/me-photoaidcom-cropped.png" alt="Picture of me">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Arrhan Bhatia</h1>
+            <p class="section__text__p2">Computer Engineering @ UIUC</p> <!-- Mkae it inot one of those lines that keeps changing  -->
+            <div class="social_container">
+                <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="window.open('https://linkedin.com/in/arrhan', '_blank');"
+                />
+                <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="window.open('https://github.com/Arrhan', '_blank');"
+                />
+            </div>
+            <div class="btn_container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/Arrhan_Bhatia_Resume.pdf', '_blank');">Resume</button>
+                <button class="btn btn-color-2">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="about_text">
+            Just wrapped up my second year of university and 2 summer internships - learnt about the real estate industry and the role of tech while working at Realty Income
+            and worked on ML models for predicting Syrian Refugee Distribution in Lebanon as an intern at the National Center of Supercomputing Applications.
+            Currently working on a Credit Card Reccomendation web app and planning to start a blog where I document my learnings and thoughts as I head into my third year.
+            Excited and always learning and growing! 
+        </div>
+    </section>
+
+    <section id="Experience">
+        
+    </section>    
+    <script src="script.js"></script>
 </body>
 </html>
